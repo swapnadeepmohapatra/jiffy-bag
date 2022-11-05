@@ -1,5 +1,7 @@
+import { gql } from "@apollo/client";
 import NextAuth from "next-auth";
 import GoogleProvider from "next-auth/providers/google";
+import { nhost } from "../../_app";
 
 export const authOptions = {
   providers: [
@@ -15,6 +17,26 @@ export const authOptions = {
   callbacks: {
     async redirect({ url, baseUrl }) {
       return `${baseUrl}/app`;
+    },
+    async signIn({ user, account, profile }) {
+      console.log(user);
+      const CREATE_USER = gql`
+        mutation {
+          insert_user_details_one(
+            object: { email: "${user.email}", image: "${user.image}", name: "${user.name}" }
+          ){
+            email
+            id
+            name
+          }
+        }
+      `;
+
+      const data = await nhost.graphql.request(CREATE_USER);
+
+      console.log(data);
+
+      return true;
     },
   },
 };

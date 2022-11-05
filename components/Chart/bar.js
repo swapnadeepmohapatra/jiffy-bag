@@ -35,7 +35,6 @@ function BarChart() {
 
   return (
     <div>
-      <h1>Bar</h1>
       <Bar
         data={data}
         width={400}

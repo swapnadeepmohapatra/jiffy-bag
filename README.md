@@ -2,7 +2,7 @@
 
 Jiggy Bag the Genz's go to app for Personal Finance
 
-## Team Memebrs Name
+## Team Members Name
 
 - [Swapnadeep Mohapatra](https://github.com/swapnadeepmohapatra)
 

@@ -19,7 +19,7 @@ export default function Home() {
         </Box>
 
         <Heading textAlign={"center"} as="h2" fontSize={"xl"}>
-          The go to app for personal finance for college students.
+          {"Genz's go to app for Personal Finance"}
         </Heading>
 
         <Flex alignItems="center" justifyContent="center" padding={4}>
