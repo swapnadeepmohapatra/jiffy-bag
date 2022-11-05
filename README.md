@@ -1,14 +1,14 @@
 # Jiggy Bag
 
-Jiggy Bag is a Genz app which is used to keep track on your personal fincance
+Jiggy Bag the Genz's go to app for Personal Finance
 
 ## Team Memebrs Name
 
-- Swapnadeep Mohapatra
+- [Swapnadeep Mohapatra](https://github.com/swapnadeepmohapatra)
 
-- Dipan Dash
+- [Dipan Dash](https://github.com/DipanDash)
 
-- Maryada Ray
+- [Maryada Ray](https://github.com/maryadaray)
 
 ## Idea
 
