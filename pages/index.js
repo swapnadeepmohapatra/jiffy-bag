@@ -22,6 +22,10 @@ export default function Home() {
           {"Genz's go to app for Personal Finance"}
         </Heading>
 
+        <Box>
+          <img src="./hero.jpeg" alt="" />
+        </Box>
+
         <Flex alignItems="center" justifyContent="center" padding={4}>
           <LoginButton />
         </Flex>
