@@ -13,3 +13,9 @@ Jiggy Bag is a Genz app which is used to keep track on your personal fincance
 ## Idea
 
 ## Tech Stack
+
+- Next.js
+
+- Nhost
+
+- Chart.js
