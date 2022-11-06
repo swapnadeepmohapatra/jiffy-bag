@@ -19,7 +19,7 @@ function App({ user_finance_details }) {
         </Heading>
 
         <Container flex={1}>
-          {/* <BarChart /> */}
+          <BarChart />
           {/* <DoughnutGraph /> */}
         </Container>
         <Container flex={1}>
@@ -32,41 +32,41 @@ function App({ user_finance_details }) {
   );
 }
 
-export async function getStaticProps(context) {
-  console.log(context);
-  const session = await getSession(context);
-  // const dd = await useSession();
+// export async function getStaticProps(context) {
+//   console.log(context);
+//   const session = await getSession(context);
+//   // const dd = await useSession();
 
-  console.log(session);
-  // console.log(dd);
+//   console.log(session);
+//   // console.log(dd);
 
-  const FINANCE_HISTORY = gql`
-    {
-      user_finance_details(where: { user: { _eq: "hello@swapnadeep.com" } }) {
-        type
-        value
-      }
-    }
-  `;
+//   const FINANCE_HISTORY = gql`
+//     {
+//       user_finance_details(where: { user: { _eq: "hello@swapnadeep.com" } }) {
+//         type
+//         value
+//       }
+//     }
+//   `;
 
-  // const nhostSession = await useQuery(FINANCE_HISTORY);
-  const data = await nhost.graphql.request(FINANCE_HISTORY);
+//   // const nhostSession = await useQuery(FINANCE_HISTORY);
+//   const data = await nhost.graphql.request(FINANCE_HISTORY);
 
-  console.log(data);
+//   console.log(data);
 
-  if (data.error) {
-    return {
-      props: {
-        error: data.error,
-      },
-    };
-  }
+//   if (data.error) {
+//     return {
+//       props: {
+//         error: data.error,
+//       },
+//     };
+//   }
 
-  return {
-    props: {
-      user_finance_details: data.data.user_finance_details,
-    },
-  };
-}
+//   return {
+//     props: {
+//       user_finance_details: data.data.user_finance_details,
+//     },
+//   };
+// }
 
 export default App;
