@@ -10,6 +10,10 @@ Jiggy Bag the Genz's go to app for Personal Finance
 
 - [Maryada Ray](https://github.com/maryadaray)
 
+## Slides
+
+[Slides Link](https://docs.google.com/presentation/d/1ad7SPIIoQVeTEArxYfzdSNqlfmGmhKgn6K_bMKYGqxU/edit?usp=sharing)
+
 ## Track
 
 **#Student Community** track
